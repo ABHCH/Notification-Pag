@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PlusJakartaSans-Medium;
+    font-family: PlusJakartaSans-ExtraBold;
+    font-weight: PlusJakartaSans-VariableFont_wght;
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+    src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+    src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+body{
+    background-color: #eaeaea;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container{
+    background-color: white;
+    width: 50%;
+    box-shadow: 0px 6px 11px 24px rgba(245,240,245,1);
+    padding: 1rem;
+    overflow-y: scroll;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: PlusJakartaSans-ExtraBold;
+    font-weight: PlusJakartaSans-VariableFont_wght;
+}
+
+.notificaton-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+
+}
+.notifation-header{
+    font-size: 1.5rem;
+}
+
+@media screen  and (min-width:300px){
+    .notifation-header{
+        font-size: 1rem;
+    }
+    .notification-number{
+        width: 20%;
+        margin-left: .4rem;
+
+    }
+}
+
+.notification-number{
+    background-color: rgb(9, 9, 45);
+    color: white;
+    padding: .3rem;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: PlusJakartaSans-ExtraBold;
+    font-weight: PlusJakartaSans-VariableFont_wght;
+    cursor: pointer;
+}
+
+.noti-1{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.noti-2{
+    margin-top: .6rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+img{
+    width: 50px;
+}
+
+.info{
+    margin-left: 1rem;
+    font-family: PlusJakartaSans-Medium;
+}
+
+.profile-Name{
+    font-family: PlusJakartaSans-ExtraBold;
+    font-weight: PlusJakartaSans-VariableFont_wght;
+}
+
+.profile-Name:hover{
+    color: rgb(37, 71, 101);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-noti{
+    font-family: PlusJakartaSans-ExtraBold;
+    font-weight: PlusJakartaSans-VariableFont_wght;
+   
+}
+
+.profile-noti:hover{
+    color: rgb(13, 41, 65);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon{
+    color: red;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 1px;
+}
+
+.description{
+    margin-top: 1rem;
+    border: 1px solid rgb(222, 218, 218);
+    padding: 1rem;
+    border-radius: 7px;
+
+}
+
+.description:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    transition: all 0.1s ease-in-out;
+}
+
+.info-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.info-1 .profile-Name{
+margin-left: 1rem;
+}
+.info-1 .time-noti{
+margin-left: 1rem;
+}
